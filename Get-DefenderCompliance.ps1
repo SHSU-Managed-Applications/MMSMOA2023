@@ -146,9 +146,9 @@ Foreach ($setting in $MPPreferenceArray) {
 if ($MPComputerComp -and $MPPreferenceComp) {
     Write-Host "COMPLIANT" -ForegroundColor Green
     Stop-Transcript
-    # [System.Environment]::Exit(0)
+    [System.Environment]::Exit(0)
 } else {
     Write-Host "NOT COMPLIANT" -ForegroundColor Red
     Stop-Transcript
-    # [System.Environment]::Exit(1)
+    [System.Environment]::Exit(1)
 }
