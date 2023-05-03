@@ -1,3 +1,5 @@
+### EXAMPLE SCRIPT. NOT FOR PRODUCTION USE. ###
+
 Start-Transcript -Path "$env:windir\Logs\Software\MEM_EndpointSecurity_Compliance.log"
 #==============================
 # MPCOMPUTERSTATUS
