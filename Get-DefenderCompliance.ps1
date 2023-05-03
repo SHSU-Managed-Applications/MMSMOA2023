@@ -48,7 +48,8 @@ Foreach ($setting in $MPComputerStatusArray) {
 Write-Output "### ENDPOINT PROTECTION PREFERENCE EVALUATION ###"
 $MPPreference = Get-MpPreference
 $MPPreferenceNOTCompliantCount = 0
-$ASRArray = @("6","1","1","0","1","1","1","6","1","6","1","6","2","1","1","1")
+# ASRArray values can be aligned with the AttackSurfaceReductionRuleIDs if specific settings need to be in separate modes.
+$ASRArray = @("1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1") # 0 = Off ; 1 = Block ; 2 = Audit ; 6 = Warn
 $MPPreferenceArray = @(
     "AttackSurfaceReductionRules_Actions,$ASRArray",
     "CheckForSignaturesBeforeRunningScan,True",
